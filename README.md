@@ -124,3 +124,6 @@ python main.py --world_size 8 --num_rounds 200 --local_steps 1 \
   Use monitoring tools to ensure that all GPUs are utilized as expected. Imbalances might indicate issues with data loading or workload distribution.
 
 
+<p align="center">
+  <img src="./assets/demo.gif" width="800" title="fllama">
+</p>
