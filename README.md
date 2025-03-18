@@ -6,6 +6,12 @@
 
 This repository demonstrates a modular, distributed, federated learning (FL) approach for finetuning a LLaMA model using PyTorch and Hugging Face libraries. The training leverages 8 GPUs (each acting as an FL client) and includes 4-bit quantization and LoRA adapter techniques.
 
+<p align="center">
+  <img src="./assets/pipeline.gif" width="800" title="fllama">
+</p>
+
+
+
 ## Repository Structure
 
 - **env.yml**  
@@ -31,6 +37,10 @@ This repository demonstrates a modular, distributed, federated learning (FL) app
   - `partition_dataset`: Evenly partitions the dataset among FL clients.
   - `federated_average`: Performs averaging on trainable parameters (LoRA weights).
   - `convert_squad_sample_to_llama_conversation`: Converts dataset samples into the conversation format expected by LLaMA.
+
+<p align="center">
+  <img src="./assets/preprocessing.gif" width="800" title="fllama">
+</p>
 
 ## Setting Up the Environment
 
